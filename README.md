@@ -1,6 +1,6 @@
 # Watch Me
 
-A helpful webapp that helps you develop better habits. It watches you through your webcam, and sends image frames at the specified interval to the web service of your choice. If that call returns the specified label, a sounds is played.
+A helpful webapp that helps you develop better habits. It watches you through your webcam, and sends image frames at the specified interval to the web service of your choice (presumably some kind of computer vision model). If that call returns a specified label, a sound is played.
 
 ## Setup
 
