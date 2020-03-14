@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css" type="text/css" media="all">
+    <title>Watch Me</title>
+    <script src="js.js"></script>
+</head>
+<body>
+    <h1>Watch Me</h1>
+    <div>
+        URL <input id="url" type="text"></input>
+        <br/>
+        Target Label <input id="targetLabel" type="text"></input>
+        <br/>
+        Interval in ms<input id="interval" type="text"></input> (minimum 100)
+    </div>
+    <div class="camera">
+        <video id="video">Video stream not available.</video>
+        <span id="prediction">[no prediction]</span>
+    </div>
+    <canvas id="canvas"></canvas>
+</body>
+</html>

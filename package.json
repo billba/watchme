@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "http-server": "^0.12.1"
+  },
+  "scripts": {
+    "start": "http-server -p 8888 -c-1"
+  },
+  "name": "lobe-mobile-html",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT"
+}
