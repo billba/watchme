@@ -137,27 +137,6 @@
             localStorage.setItem('interval', ev.target.value);
             updateInterval();
         }, false);
-
-        function initAudio(){
-            var audio = new Audio('baa.mp3');
-            var self = this;
-            //not sure if you need this, but it's better to be safe
-            self.audio = audio;
-            var startAudio = function(){
-                self.audio.play();
-                document.removeEventListener("touchstart", self.startAudio, false);
-            }
-            self.startAudio = startAudio;
-        
-            var pauseAudio = function(){
-                self.audio.pause();
-                self.audio.removeEventListener("play", self.pauseAudio, false);
-            }
-            self.pauseAudio = pauseAudio;
-        
-            document.addEventListener("touchstart", self.startAudio, false);
-            self.audio.addEventListener("play", self.pauseAudio, false);
-        }
     }
 
     // Set up our event listener to run the startup process
