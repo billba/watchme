@@ -122,17 +122,17 @@
 
         updateInterval();
 
-        url.addEventListener('input', ev => {
+        url.addEventListener('change', ev => {
             console.log("url", ev);
             localStorage.setItem('url', ev.target.value);
         }, false);
 
-        targetLabel.addEventListener('input', ev => {
+        targetLabel.addEventListener('change', ev => {
             console.log(ev);
             localStorage.setItem('targetLabel', ev.target.value);
         }, false);
 
-        interval.addEventListener('input', ev => {
+        interval.addEventListener('change', ev => {
             console.log(ev);
             localStorage.setItem('interval', ev.target.value);
             updateInterval();
